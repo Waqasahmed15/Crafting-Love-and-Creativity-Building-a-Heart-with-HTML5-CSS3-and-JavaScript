@@ -74,3 +74,16 @@ body {
   left: 50px;
   top: 0;
 }
+
+.red-heart.animation {
+  animation: pop 0.9s linear;
+}
+.heart.fill-color {
+  background: var(--main-color);
+}
+@keyframes pop {
+  100% {
+    transform: scale(1.7) rotate(-45deg);
+    opacity: 0;
+  }
+}
