@@ -3,3 +3,48 @@
   margin: 0;
   box-sizing: border-box;
 }
+:root {
+  --main-color: #dc1436;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background: rgb(7, 7, 20);
+}
+
+.gray-heart {
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 0;
+  transform: rotate(-45deg);
+}
+
+.gray-heart::after,
+.gray-heart::before {
+  content: "";
+  background: #ccc;
+  position: absolute;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+
+.gray-heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.gray-heart::after {
+  top: 0px;
+  left: 50px;
+}
+
+/* .red-heart {
+} */
